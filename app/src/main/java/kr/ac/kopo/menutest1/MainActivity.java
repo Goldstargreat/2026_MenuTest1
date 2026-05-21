@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity
             return true;
         } else if (item.getItemId() == R.id.btn_rotate)
         {
-            rotationDegree += 45;
+            rotationDegree = rotationDegree + 45;
             btn.setRotation(rotationDegree);  // +45도 누적 회전
             return true;
         } else if (item.getItemId() == R.id.btn_zoomin)
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity
             return true;
         } else if (item.getItemId() == R.id.btn_rotate_neg)
         {
-            rotationDegree -= 45;
+            rotationDegree = rotationDegree - 45;
             btn.setRotation(rotationDegree);  // -45도 누적 회전
             return true;
         } else if (item.getItemId() == R.id.btn_zoomin_y)
